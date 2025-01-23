@@ -8,7 +8,7 @@ const datos = document.querySelector('.datos--tiempo');
 const ciudad = document.getElementById('ciudad');
 
 const api = axios.create({
-    baseURL: `https://cors-anywhere.herokuapp.com/http://api.meteored.com.ar/index.php?api_lang=ar`,
+    baseURL: `https://cors-anywhere.herokuapp.com/https://api.meteored.com.ar/index.php?api_lang=ar`,
 })
 
 
@@ -169,14 +169,14 @@ obtenerContinentes().then(r => {
     obtenerPaises().then()
 })
 
-continent.addEventListener('change', async (ev) => {
+continent.addEventListener('change', async () => {
     obtenerPaises().then()
 })
 
-paises.addEventListener('change', async (ev) => {
+paises.addEventListener('change', async () => {
     obtenerProvincias().then()
 })
 
-provinc.addEventListener('change', async (ev) => {
+provinc.addEventListener('change', async () => {
     obtenerLocalidades().then()
 })
