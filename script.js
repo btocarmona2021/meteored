@@ -8,7 +8,7 @@ const datos = document.querySelector('.datos--tiempo');
 const ciudad = document.getElementById('ciudad');
 
 const api = axios.create({
-    baseURL: `https://cors-anywhere.herokuapp.com/https://api.meteored.com.ar/index.php?api_lang=ar`,
+    baseURL: `https://api.allorigins.win/get?url=https://api.meteored.com.ar/index.php?api_lang=ar`,
 })
 
 
