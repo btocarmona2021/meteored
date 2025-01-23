@@ -8,7 +8,7 @@ const datos = document.querySelector('.datos--tiempo');
 const ciudad = document.getElementById('ciudad');
 
 const api = axios.create({
-    baseURL: `http://api.meteored.com.ar/index.php?api_lang=ar`,
+    baseURL: `https://api.meteored.com.ar/index.php?api_lang=ar`,
 })
 
 
